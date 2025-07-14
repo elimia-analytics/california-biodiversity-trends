@@ -1,0 +1,638 @@
+/*********************************************************************
+                            Desktops, large screens
+**********************************************************************/
+
+
+@media (min-width: 1600px) { 
+ 
+ html {
+  zoom: 100%;
+}
+
+.container-fluid {
+padding-left: 0;
+padding-right: 0;
+} 
+
+.body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  padding: 0;
+}
+
+.shiny-output-error { 
+  visibility: hidden; 
+  
+}
+
+.shiny-output-error:before { 
+  visibility: hidden; 
+}
+  
+.well {
+  background-color: white;
+}
+
+.form-control {
+  border-radius: 10px;
+}
+
+.navbar {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  position: relative;
+  min-height: 45px;
+  margin-bottom: 0;
+  border: 1px solid transparent;
+  color: #585032;
+}
+
+.navbar-default .navbar-nav>.active>a {
+  font-family: 'Roboto', sans-serif;
+  color: #585032;
+  background-color: white;
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  color: #585032;
+  background-color: white;
+  padding: 2px 10px 2px 10px;
+  height: 45px;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: 'Roboto', sans-serif;
+  color: #585032;
+}
+
+
+h1 {
+  font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+h4 {
+  font-size: 1.0em;
+}
+
+h5 {
+  font-size: 0.9em;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 0.9em;
+}
+
+outer {
+  margin: 0px;
+  padding: 0px;
+}
+
+.leaflet-container {
+  background: transparent !important;
+}
+
+.form-group {
+  height: auto !important;
+  margin-top: -15px !important;
+  padding-top: 0px !important;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+}
+
+table.dataTable {
+  font-size: 12px;
+}
+
+.selectize-input 
+{
+   max-width: 100%; /* or whatever width you want. */
+   display: inline-block;
+}
+
+.shiny-output-error { 
+  visibility: hidden; 
+}
+
+.shiny-output-error:before { 
+  visibility: hidden; 
+}
+
+.leaflet-marker-pane {
+  z-index: 1000 !important;
+}
+
+.shiny-notification {
+              height: 100px;
+              width: 800px;
+              position:fixed;
+              top: calc(50% - 50px);;
+              left: calc(50% - 400px);;
+            }
+
+.nav-pills>li>a, .nav-pills>li.active>a {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.nav-pills>li>a {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.nav-tabs>li>a {
+    margin: 0 0 15px 0 !important;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  background-color: rgba(230, 239, 240, 0.5) !important;
+}
+
+.panel-group {
+  padding: 20px !important;
+}
+    .panel-primary>.panel-heading .panel-title a.collapsed:after {
+      transform: rotate(180deg);
+      transition: .5s ease-in-out;
+    }
+    .panel-primary>.panel-heading .panel-title a:after {
+      content:'⏶';
+      text-align: right;
+      float:right;
+      transition: .5s ease-in-out;
+    }
+    .panel-primary>.panel-heading .panel-title a:not([class]):after {
+      transform: rotate(180deg);
+    }
+    
+    #inputs_single.panel-group {
+      padding: 0 !important;
+      margin-bottom: 2px !important;
+    }
+    
+    #outputs_single.panel-group {
+      padding: 0 !important;
+      margin-bottom: 8px;
+    }
+    
+    table.dataTable th.dt-right, table.dataTable td.dt-right {
+      text-align: left;
+    }
+    
+.btn-default {
+  font-size: 12px;
+}
+
+.btn-primary {
+  font-size: 12px;
+}
+
+.btn-lg {
+  font-size: 16px !important;  
+  padding: 6px 10px 6px 10px !important;
+}
+
+.nav-tabs {
+  border-bottom: transparent;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+        background-color: rgba(230, 239, 240, 0.5) !important;
+        border-color: transparent;
+        border-bottom-color: transparent;
+    }
+
+.nav-tabs>li>a:hover {
+    border-bottom: transparent;
+}
+
+.selectize-input {
+  max-height: 10vh;
+  overflow-y: scroll;
+  scrollbar-color: transparent transparent !important;
+}
+
+table.dataTable th.dt-center, table.dataTable td.dt-center, table.dataTable td.dataTables_empty {
+  text-align: left !important;
+}
+
+.tooltip {
+  pointer-events: none;
+  text-align: left;
+}
+.tooltip > .tooltip-inner {
+  pointer-events: none;
+  background-color: #FFFFFF;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+  padding: 4px;
+  font-size: 12px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 60px;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 15000;
+  top: -5px;
+}
+.tooltip > .arrow::before {
+  border-right-color: black;
+}
+
+.leaflet-popup-content-wrapper {
+  overflow: scroll !important;
+  height: 200px;
+}
+
+.leaflet-popup-pane {
+  z-index: 3000;
+}
+
+.progress {
+  height: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.sidebar.aoi-sidebar>.collapse-toggle {
+  top: 50vh !important;     /* adjust vertically if needed */
+}
+
+  #records_table table.dataTable tbody tr.selected {
+    background-color: red !important;
+    color: white;
+    box-shadow: inset 0 0 0 9999px rgba(117, 117, 117, 0.5);
+  }
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+  margin-top: 2px !important;
+}
+
+/* Selected row color 
+table.display.dataTable > tbody > tr.selected > *,
+table.display.dataTable > tbody > tr.odd.selected > *,
+table.display.dataTable > tbody > tr.even.selected > *,
+table.display.dataTable > tbody > tr.selected:hover > *,
+table.display.dataTable > tbody > tr.odd.selected:hover > *,
+table.display.dataTable > tbody > tr.even.selected:hover > * {
+box-shadow: inset 0 0 0 9999px rgba(117, 117, 117, 0.5);
+}
+
+table.dataTable.stripe>tbody>tr.odd.selected>*, 
+table.dataTable.display>tbody>tr.odd.selected>*,
+table.dataTable.stripe>tbody>tr.even.selected>*, 
+table.dataTable.display>tbody>tr.even.selected>*
+{
+  box-shadow: inset 0 0 0 9999px rgba(117, 117, 117, 0.5);
+}
+*/
+}
+/*********************************************************************
+                            Small screens, phones
+**********************************************************************/
+
+@media (max-width: 1599px) {
+
+ 
+.container-fluid {
+padding-left: 0;
+padding-right: 0;
+} 
+
+/*
+html {
+  zoom: 80%;
+}
+*/
+ .body {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  padding: 0;
+}
+
+.shiny-output-error { 
+  visibility: hidden; 
+  
+}
+
+.shiny-output-error:before { 
+  visibility: hidden; 
+}
+  
+.well {
+  background-color: white;
+}
+
+.form-control {
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.navbar {
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0;
+  border: 1px solid transparent;
+  color: #1F417D;
+}
+
+.navbar-default .navbar-nav>.active>a {
+  font-family: 'Roboto', sans-serif;
+  color: #1F417D;
+  background-color: white;
+}
+
+.navbar-default .navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  color: #1F417D;
+    background-color: white;
+  padding: 2px 10px 2px 10px;
+}
+
+h1, h2, h3, h4, h5, p {
+  font-family: 'Roboto', sans-serif;
+  color: #1F417D;
+}
+
+
+h1 {
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
+h3 {
+  font-size: 1.0em;
+}
+
+h4 {
+  font-size: 0.9em;
+}
+
+h5 {
+  font-size: 0.8em;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+label {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 0.8em;
+}
+
+outer {
+  margin: 0px;
+  padding: 0px;
+}
+
+.leaflet-container {
+  background: transparent !important;
+}
+
+.form-group {
+  height: auto !important;
+  margin-top: -15px !important;
+  padding-top: 0px !important;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+}
+
+table.dataTable {
+  font-size: 12px;
+}
+
+.btn-default {
+  font-size: 11px;
+}
+
+.btn-primary {
+  font-size: 11px;
+}
+
+.btn-lg {
+  font-size: 16px !important;
+  padding: 6px 10px 6px 10px !important;
+}
+
+.input-group-sm>.form-control, .input-group-sm>.input-group-addon, .input-group-sm>.input-group-btn>.btn {
+  font-size: 13px;
+}
+
+.selectize-input 
+{
+   max-width: 100%; 
+   display: inline-block;
+   font-size: 0.9em;
+}
+
+.shiny-output-error { 
+  visibility: hidden; 
+}
+
+.shiny-output-error:before { 
+  visibility: hidden; 
+}
+
+.leaflet-marker-pane {
+  z-index: 1000 !important;
+}
+
+.dygraph-axis-label {
+  font-size: 0.8em;
+}
+
+.g-xtitle {
+  font-size: 0.8em !important;
+}
+
+.g-ytitle {
+  font-size: 0.8em !important;
+}
+
+.shiny-notification {
+              height: 100px;
+              width: 800px;
+              position:fixed;
+              top: calc(50% - 50px);;
+              left: calc(50% - 400px);;
+            }
+            
+.nav-pills>li>a, .nav-pills>li.active>a {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  background-color: rgba(230, 239, 240, 0.5) !important;
+}
+
+.panel-group {
+  padding: 20px !important;
+}
+    .panel-primary>.panel-heading .panel-title a.collapsed:after {
+      transform: rotate(180deg);
+      transition: .5s ease-in-out;
+    }
+    .panel-primary>.panel-heading .panel-title a:after {
+      content:'⏶';
+      text-align: right;
+      float:right;
+      transition: .5s ease-in-out;
+    }
+    .panel-primary>.panel-heading .panel-title a:not([class]):after {
+      transform: rotate(180deg);
+    }
+    
+    #inputs_single.panel-group {
+      padding: 0 !important;
+      margin-bottom: 2px !important;
+    }
+    
+    #outputs_single.panel-group {
+      padding: 0 !important;
+      margin-bottom: 8px;
+    }
+    
+    table.dataTable th.dt-right, table.dataTable td.dt-right {
+      text-align: left;
+    }
+
+.nav-tabs {
+  border-bottom: transparent;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+        background-color: rgba(230, 239, 240, 0.5) !important;
+        border-color: transparent;
+        border-bottom-color: transparent;
+    }
+
+.nav-tabs>li>a:hover {
+    border-bottom: transparent;
+}
+
+.selectize-input {
+  max-height: 10vh;
+  overflow-y: scroll;
+}
+
+table.dataTable th.dt-center, table.dataTable td.dt-center, table.dataTable td.dataTables_empty {
+  text-align: left !important;
+}
+
+.tooltip {
+  pointer-events: none;
+  text-align: left;
+}
+.tooltip > .tooltip-inner {
+  pointer-events: none;
+  background-color: #FFFFFF;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+  padding: 4px;
+  font-size: 12px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 60px;
+  background-color: black;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 15000;
+  top: -5px;
+}
+.tooltip > .arrow::before {
+  border-right-color: black;
+}
+
+.bslib-sidebar-layout>.sidebar {
+  width: 400px !important;
+}
+
+        .bslib-sidebar-layout > .collapse-toggle {
+            position: relative;
+            float: right;
+        }
+
+.leaflet-popup-content-wrapper {
+  overflow: scroll !important;
+  height: 200px;
+}
+
+.leaflet-popup-pane {
+  z-index: 3000;
+}
+
+/* Selected row color 
+table.display.dataTable > tbody > tr.selected > *,
+table.display.dataTable > tbody > tr.odd.selected > *,
+table.display.dataTable > tbody > tr.even.selected > *,
+table.display.dataTable > tbody > tr.selected:hover > *,
+table.display.dataTable > tbody > tr.odd.selected:hover > *,
+table.display.dataTable > tbody > tr.even.selected:hover > * {
+box-shadow: inset 0 0 0 9999px rgba(117, 117, 117, 0.5);
+}
+
+table.dataTable.stripe>tbody>tr.odd.selected>*, 
+table.dataTable.display>tbody>tr.odd.selected>*,
+table.dataTable.stripe>tbody>tr.even.selected>*, 
+table.dataTable.display>tbody>tr.even.selected>*
+{
+  box-shadow: inset 0 0 0 9999px rgba(117, 117, 117, 0.5);
+}
+*/
+
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+  margin-top: 2px !important;
+}
+
+}
